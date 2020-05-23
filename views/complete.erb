@@ -34,27 +34,27 @@
             <p>3営業日以内をめどにご返信いたしますので、しばらくお待ちください。</p>
             <table class="table">
                 <tr>
-                    <th>送信内容</th>
+                    <th class="border-top-0 font-weight-bold h4">送信内容</th>
                 </tr>
                 <tr>
-                    <td>会社名</td>
+                    <td class="text-left font-weight-bold">会社名</td>
                     <td><%= name = params['company'] %></td>
                 </tr>
                 <tr>
-                    <td>氏名</td>
-                    <td><%= name = params['name'] %></td>
+                    <td class="font-weight-bold">氏名</td>
+                    <td class="text-left"><%= name = params['name'] %></td>
                 </tr>
                 <tr>
-                    <td>メール</td>
+                    <td class="font-weight-bold">メール</td>
                     <td><%= name = params['mail'] %></td>
                 </tr>
                 <tr>
-                    <td>電話番号</td>
+                    <td class="font-weight-bold">電話番号</td>
                     <td><%= name = params['tel'] %></td>
                 </tr>
                 <tr>
-                    <td>内容</td>
-                    <td><%= name = params['content']%>.gsub(/(\r\n|\r|\n)/, "<br />")</td>
+                    <td class="font-weight-bold">内容</td>
+                    <td><%= name = params['content'].gsub(/\r\n|\r|\n/, "<br>")%></td>
                 </tr>
             </table>
             <div class="text-center mb-4">
@@ -73,4 +73,3 @@
         <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"></script>
     </body>
 </html>
-<!--これはなんでようっhjh-->
